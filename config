@@ -24,10 +24,7 @@ srcs="$ngx_addon_dir/src/ngx_http_waf_module_core.c \
     $ngx_addon_dir/src/ngx_http_waf_module_util.c \
     $ngx_addon_dir/src/ngx_http_waf_module_vm.c \
     $ngx_addon_dir/src/ngx_http_waf_module_lexer.c \
-    $ngx_addon_dir/src/ngx_http_waf_module_parser.tab.c \
-    $ngx_addon_dir/inc/libinjection/src/libinjection_html5.c \
-    $ngx_addon_dir/inc/libinjection/src/libinjection_sqli.c \
-    $ngx_addon_dir/inc/libinjection/src/libinjection_xss.c"
+    $ngx_addon_dir/src/ngx_http_waf_module_parser.tab.c"
 
 
 ngx_http_waf_module_libs=""
@@ -193,8 +190,8 @@ ngx_feature_run=no
 ngx_feature_path=$ngx_http_waf_module_inc_path
 ngx_feature_incs=$(cat << END
 
-#include <libinjection/src/libinjection.h>
-#include <libinjection/src/libinjection_sqli.h>
+#include <libinjection.h>
+#include <libinjection_sqli.h>
 
 END
 )
@@ -212,6 +209,8 @@ Please run cd $ngx_addon_dir && git clone https://github.com/libinjection/libinj
 END
     PWD=''
     exit 1
+else
+    ngx_http_waf_module_libs=" ${ngx_http_waf_module_libs}  -l injection "
 fi
 
 if [ -n "$LIB_SODIUM" ] ;  then
