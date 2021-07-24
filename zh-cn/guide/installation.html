@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>安装 | ngx_waf</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/ADD-SP/ngx_waf@master/assets/logo.png">
+    <meta name="description" content="使用简单的 nginx 防火墙模块">
+    
+    <link rel="preload" href="/ngx_waf/assets/css/0.styles.50317297.css" as="style"><link rel="preload" href="/ngx_waf/assets/js/app.7c4daa1b.js" as="script"><link rel="preload" href="/ngx_waf/assets/js/2.97d707a6.js" as="script"><link rel="preload" href="/ngx_waf/assets/js/36.0d13ca34.js" as="script"><link rel="prefetch" href="/ngx_waf/assets/js/10.ed01635f.js"><link rel="prefetch" href="/ngx_waf/assets/js/11.9d64c9bf.js"><link rel="prefetch" href="/ngx_waf/assets/js/12.a0923bd0.js"><link rel="prefetch" href="/ngx_waf/assets/js/13.7b7474d2.js"><link rel="prefetch" href="/ngx_waf/assets/js/14.842942df.js"><link rel="prefetch" href="/ngx_waf/assets/js/15.74814ed8.js"><link rel="prefetch" href="/ngx_waf/assets/js/16.b3298ef2.js"><link rel="prefetch" href="/ngx_waf/assets/js/17.2a2e3a13.js"><link rel="prefetch" href="/ngx_waf/assets/js/18.300b26b7.js"><link rel="prefetch" href="/ngx_waf/assets/js/19.5faee1a3.js"><link rel="prefetch" href="/ngx_waf/assets/js/20.221206b9.js"><link rel="prefetch" href="/ngx_waf/assets/js/21.4cca39bb.js"><link rel="prefetch" href="/ngx_waf/assets/js/22.ef779016.js"><link rel="prefetch" href="/ngx_waf/assets/js/23.35e80f6d.js"><link rel="prefetch" href="/ngx_waf/assets/js/24.0f1c27ae.js"><link rel="prefetch" href="/ngx_waf/assets/js/25.099a84bf.js"><link rel="prefetch" href="/ngx_waf/assets/js/26.238c5dba.js"><link rel="prefetch" href="/ngx_waf/assets/js/27.745cdab3.js"><link rel="prefetch" href="/ngx_waf/assets/js/28.19354b2f.js"><link rel="prefetch" href="/ngx_waf/assets/js/29.ea1e3858.js"><link rel="prefetch" href="/ngx_waf/assets/js/3.490ddea4.js"><link rel="prefetch" href="/ngx_waf/assets/js/30.7e191246.js"><link rel="prefetch" href="/ngx_waf/assets/js/31.9bc00724.js"><link rel="prefetch" href="/ngx_waf/assets/js/32.af9c66cb.js"><link rel="prefetch" href="/ngx_waf/assets/js/33.df5cd07a.js"><link rel="prefetch" href="/ngx_waf/assets/js/34.cac10939.js"><link rel="prefetch" href="/ngx_waf/assets/js/35.d314a099.js"><link rel="prefetch" href="/ngx_waf/assets/js/37.25892c1e.js"><link rel="prefetch" href="/ngx_waf/assets/js/38.523cd4ae.js"><link rel="prefetch" href="/ngx_waf/assets/js/39.a6610921.js"><link rel="prefetch" href="/ngx_waf/assets/js/4.05981b0e.js"><link rel="prefetch" href="/ngx_waf/assets/js/40.720a9785.js"><link rel="prefetch" href="/ngx_waf/assets/js/5.e3c448bb.js"><link rel="prefetch" href="/ngx_waf/assets/js/6.a418b2e1.js"><link rel="prefetch" href="/ngx_waf/assets/js/7.e8f9bb99.js"><link rel="prefetch" href="/ngx_waf/assets/js/8.89bf1fad.js"><link rel="prefetch" href="/ngx_waf/assets/js/9.acd50aca.js">
+    <link rel="stylesheet" href="/ngx_waf/assets/css/0.styles.50317297.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/ngx_waf/zh-cn/" class="home-link router-link-active"><!----> <span class="site-name">ngx_waf</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ngx_waf/guide/installation.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/ngx_waf/zh-cn/guide/installation.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/ADD-SP/ngx_waf/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ngx_waf/guide/installation.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/ngx_waf/zh-cn/guide/installation.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/ADD-SP/ngx_waf/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/ngx_waf/zh-cn/guide/overview.html" class="sidebar-heading clickable open"><span>快速上手</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/ngx_waf/zh-cn/guide/overview.html" class="sidebar-link">简介</a></li><li><a href="/ngx_waf/zh-cn/guide/version.html" class="sidebar-link">版本说明</a></li><li><a href="/ngx_waf/zh-cn/guide/compatibility.html" class="sidebar-link">兼容性说明</a></li><li><a href="/ngx_waf/zh-cn/guide/installation.html" aria-current="page" class="active sidebar-link">安装</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ngx_waf/zh-cn/guide/installation.html#静态模块" class="sidebar-link">静态模块</a></li><li class="sidebar-sub-header"><a href="/ngx_waf/zh-cn/guide/installation.html#动态模块" class="sidebar-link">动态模块</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ngx_waf/zh-cn/guide/installation.html#下载预构建的模块" class="sidebar-link">下载预构建的模块</a></li><li class="sidebar-sub-header"><a href="/ngx_waf/zh-cn/guide/installation.html#编译动态模块" class="sidebar-link">编译动态模块</a></li></ul></li></ul></li><li><a href="/ngx_waf/zh-cn/guide/configuration.html" class="sidebar-link">配置</a></li><li><a href="/ngx_waf/zh-cn/guide/test.html" class="sidebar-link">测试</a></li><li><a href="/ngx_waf/zh-cn/guide/faq.html" class="sidebar-link">常见问题与解答</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/ngx_waf/zh-cn/advance/directive.html" class="sidebar-heading clickable"><span>进阶指南</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/ngx_waf/zh-cn/todo/overview.html" class="sidebar-link">开发计划（建议征集）</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h1> <p>nginx 提供两种安装模块的方式，即「静态链接」和「动态加载」，通过两种方式安装的模块也分别称为「静态模块」和「动态模块」。</p> <p>你可以通过运行脚本 <code>assets/guide.sh</code> 来选择使用静态模块还是动态模块。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">sh</span> assets/guide.sh
+
+<span class="token comment"># It is recommended that you use dynamic modules.</span>
+<span class="token comment"># 如果输出上面这行则建议使用动态模块。</span>
+
+<span class="token comment"># It is recommended that you use static modules.</span>
+<span class="token comment"># 如果输出上面这行则建议使用静态模块。</span>
+</code></pre></div><h2 id="静态模块"><a href="#静态模块" class="header-anchor">#</a> 静态模块</h2> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>编译安装模块可能需要一些依赖，比如 gcc，请自行解决依赖问题，本文不提供这类信息。</p></div> <div class="custom-block danger"><p class="custom-block-title">重要信息</p> <p>编译安装一个新的模块需要知道当前的 nginx 的 <code>configure</code> 脚本的参数，您可以通过运行 <code>nginx -V</code> 来获取。
+下面是一个例子。</p> <div class="language- extra-class"><pre class="language-text"><code>nginx version: nginx/1.19.6
+built by gcc 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04)
+built with OpenSSL 1.1.1i  8 Dec 2020
+TLS SNI support enabled
+configure arguments: --with-mail=dynamic --with-openssl=/usr/local/src/openssl-OpenSSL_1_1_1i --prefix=/usr/local/nginx --user=nginx --group=nginx --with-file-aio --with-http_ssl_module --with-http_geoip_module --with-http_v2_module --with-http_realip_module --with-stream_ssl_preread_module --with-http_addition_module --with-http_xslt_module=dynamic --with-http_image_filter_module=dynamic --with-http_sub_module --with-http_dav_module --with-http_flv_module --with-http_mp4_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_random_index_module --with-http_secure_link_module --with-http_degradation_module --with-http_slice_module --with-http_perl_module --with-http_stub_status_module --with-http_auth_request_module --with-mail=dynamic --with-mail_ssl_module --with-pcre --with-pcre-jit --with-stream=dynamic --with-stream_ssl_module --with-debug --with-cc-opt='-O3 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic'
+</code></pre></div><p>务必记住 <code>configure arguments:</code> 后面的内容，下文中将使用 <code>ARG</code> 来代替这块内容。</p></div> <p>安装静态模块需要重新编译整个 nginx，花费的时间相对于安装动态模块比较长。</p> <p>首先下载对应版本的 nginx，<a href="http://nginx.org/en/download.html" target="_blank" rel="noopener noreferrer">下载页面<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。
+下面将以 <code>nginx-1.20.1</code> 为例。</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">cd</span> /usr/local/src
+<span class="token function">wget</span> https://nginx.org/download/nginx-1.20.1.tar.gz
+<span class="token function">tar</span> -zxf nginx-1.20.1.tar.gz
+</code></pre></div><p>然后下载本模块的源码，下文将使用稳定版的源码。</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">cd</span> /usr/local/src
+<span class="token comment"># 如果你想使用开发版的模块请将 -b master 替换为 -b dev。</span>
+<span class="token function">git</span> clone -b master https://github.com/ADD-SP/ngx_waf.git
+<span class="token builtin class-name">cd</span> ngx_waf
+<span class="token function">git</span> clone https://github.com/libinjection/libinjection.git inc/libinjection
+</code></pre></div><p>接下来应该运行配置脚本。</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">cd</span> /usr/local/src/nginx-1.20.1
+./configure ARG --add-module<span class="token operator">=</span>/usr/local/src/ngx_waf
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">注意</p> <ul><li><p><code>ARG</code> 的含义见<a href="#%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85">编译安装</a>。</p></li> <li><p>如果您使用的编译器是 GCC，请在 <code>--with-cc-opt</code> 中追加 <code>-fstack-protector-strong</code>，
+例如 <code>--with-cc-opt='-Werror -g'</code> ---&gt; <code>--with-cc-opt='-Werror -g -fstack-protector-strong'</code></p></li></ul></div> <p>接着您开始编译了</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># 不使用并行编译</span>
+<span class="token function">make</span>
+
+<span class="token comment"># 使用并行编译</span>
+<span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">注意</p> <p>并行会提升编译速度，但是有概率出现莫名奇妙的错误，如果并行编译出错，可以禁用并行编译。</p></div> <p>最后您应该关闭 nginx，然后替换 nginx 的二进制文件，
+此处假设 nginx 的二进制文件的绝对路径为 <code>/usr/local/nginx/sbin/nginx</code>。</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">cp</span> objs/nginx /usr/local/nginx/sbin/nginx
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">热部署</p> <p>如果您不想在替换二进制文件时关闭 nginx，可以参考<a href="http://nginx.org/en/docs/control.html" target="_blank" rel="noopener noreferrer">官方文档的热部署方案<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p></div> <h2 id="动态模块"><a href="#动态模块" class="header-anchor">#</a> 动态模块</h2> <h3 id="下载预构建的模块"><a href="#下载预构建的模块" class="header-anchor">#</a> 下载预构建的模块</h3> <p>您可以通过执行脚本 <code>assets/download.sh</code> 来下载动态模块。下面是一些用例。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 用于 nginx-1.20.1 的稳定版的模块</span>
+<span class="token function">sh</span> assets/download.sh <span class="token number">1.20</span>.1 stable
+
+<span class="token comment"># 用于 nginx-1.21.1 的稳定版的模块</span>
+<span class="token function">sh</span> assets/download.sh <span class="token number">1.21</span>.1 stable
+
+<span class="token comment"># 用于 nginx-1.20.1 的测试版的模块</span>
+<span class="token function">sh</span> assets/download.sh <span class="token number">1.20</span>.1 beta
+
+<span class="token comment"># 用于 nginx-1.21.1 的测试版的模块</span>
+<span class="token function">sh</span> assets/download.sh <span class="token number">1.21</span>.1 beta
+</code></pre></div><p>执行脚本后你会看到类似下面这样的输出。</p> <div class="language- extra-class"><pre class="language-text"><code>checking for command ... yes
+checking for libc implementation ... yes
+ + GNU C libary
+Pulling remote image addsp/ngx_waf-prebuild:ngx-1.21.1-module-beta-glibc
+......
+......
+......
+Download complete!
+</code></pre></div><p>如果你看到 <code>Download complete!</code> 则说明下载成功，模块会被保存在当前目录下。
+你可以将其拷贝到一个目录下，然后在 <code>nginx.conf</code> 的顶部添加一行。</p> <div class="language-nginx extra-class"><pre class="language-nginx"><code><span class="token directive"><span class="token keyword">load_module</span> <span class="token string">&quot;/path/to/ngx_http_waf_module.so&quot;</span></span><span class="token punctuation">;</span>
+</code></pre></div><p>然后关闭 nginx 并运行 <code>nginx -t</code>。如果没有出错则说明模块被正常加载，反之则说明您的 nginx 不支持预构建的模块，请编译安装模块。</p> <div class="custom-block tip"><p class="custom-block-title">注意</p> <p>当我们更新了模块后，大约需要两个小时来编译和上传模块。</p></div> <h3 id="编译动态模块"><a href="#编译动态模块" class="header-anchor">#</a> 编译动态模块</h3> <p>编译安装动态模块并不需要重新编译整个 nginx，只需要重新编译所有的模块，所以
+速度相对静态模块快一些，这也是本文档推荐的方式。</p> <p>下载 nginx 源码和模块源码的过程同<a href="#%E9%9D%99%E6%80%81%E6%A8%A1%E5%9D%97">静态模块</a>，不再赘述。</p> <p>运行配置脚本</p> <div class="language-sh extra-class"><pre class="language-sh"><code>./configure --add-dynamic-module<span class="token operator">=</span>/usr/local/src/ngx_waf --with-compat
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">注意</p> <ul><li>如果您使用的编译器是 GCC，请在 <code>--with-cc-opt</code> 中追加 <code>-fstack-protector-strong</code>，
+例如 <code>--with-cc-opt='-Werror -g'</code> ---&gt; <code>--with-cc-opt='-Werror -g -fstack-protector-strong'</code></li></ul></div> <p>然后开始编译动态模块</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">make</span> modules
+</code></pre></div><p>接着您应该关闭 nginx，然后将动态模块拷贝到模块目录，
+此处假设模块目录的绝对路径为 <code>/usr/local/nginx/modules</code>。</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">cp</span> objs/*.so /usr/local/nginx/modules
+</code></pre></div><p>最后在 nginx 的配置文件顶部添加一行</p> <div class="language-vim extra-class"><pre class="language-vim"><code>load_module <span class="token string">&quot;/usr/local/nginx/modules/ngx_http_waf_module.so&quot;</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/ADD-SP/ngx_waf/edit/master/docs/zh-cn/guide/installation.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">最后一次更新:</span> <span class="time">2021/7/24 上午2:14:12</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/ngx_waf/zh-cn/guide/compatibility.html" class="prev">
+        兼容性说明
+      </a></span> <span class="next"><a href="/ngx_waf/zh-cn/guide/configuration.html">
+        配置
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/ngx_waf/assets/js/app.7c4daa1b.js" defer></script><script src="/ngx_waf/assets/js/2.97d707a6.js" defer></script><script src="/ngx_waf/assets/js/36.0d13ca34.js" defer></script>
+  </body>
+</html>
