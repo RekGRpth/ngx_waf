@@ -1,0 +1,13 @@
+name: Merge
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: rekgrpth/git-clone-action@v1
+      - uses: rekgrpth/git-fetch-upstream-merge-upstream-push-action@v1
+        with:
+          repository: ADD-SP/ngx_waf
