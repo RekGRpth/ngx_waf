@@ -449,6 +449,7 @@ char* ngx_http_waf_merge_loc_conf(ngx_conf_t *cf, void *prev, void *conf) {
         child->black_post = parent->black_post;
         child->black_ipv4 = parent->black_ipv4;
         child->black_cookie = parent->black_cookie;
+        child->black_referer = parent->black_referer;
         child->advanced_rule = parent->advanced_rule;
     }
     
@@ -925,6 +926,7 @@ ngx_http_waf_loc_conf_t* ngx_http_waf_init_conf(ngx_conf_t* cf) {
     conf->check_proc[9] = ngx_http_waf_handler_check_black_referer;
     conf->check_proc[10] = ngx_http_waf_handler_check_black_cookie;
     conf->check_proc[11] = ngx_http_waf_vm_exec;
+    conf->check_proc[12] = ngx_http_waf_handler_check_black_post;
 
     return conf;
 }
